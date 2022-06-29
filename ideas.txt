@@ -1,0 +1,16 @@
+This has three parts:
+Data --> Controller/Model --> Decision (buy or sell, what security)
+
+Data: historical or current
+Model/controller: White paper or trained algorithm (expected value from some metric on historical)
+Decision: trading API
+
+Implicitly:
+	Feedback: some way to assess decisions (before we make them, to train, after we make them)
+	Screener: way to find securities to pass to the controller to decide
+
+Training:
+	Historical Data --> Screener --> Preliminary decision framework --> Decision --> Result/Feedback
+
+Implementation:
+	Live Data --> Finalized Screener --> Finalized framework --> Decision --> Portfolio Tracker
