@@ -1,15 +1,16 @@
-def __init__(self):
-    return self
+class Decision:
+    def __init__(self):
+        self.list = {
+            "ticker" : "test",
+            "entry-price" : "test",
+            "exit-price": "test",
+            "certainty" : "test",
+        }
 
-def __main__():
-    decision = {
-        "asset" : str,
-        "entry-price" : float,
-        "exit-price": float,
-        "certainty" : float
-    }
-    print(decision)
-    return decision
+        self.test_var = "test_var"
 
-def __name__():
-    return "decision"
+    def __main__(self):
+        return self.test_var
+
+    def __name__(self):
+        return self.test_var
